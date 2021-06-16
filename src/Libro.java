@@ -8,40 +8,67 @@ public class Libro {
 
         Scanner scanner = new Scanner(System.in);
         String nombreLibro, autor;
-        int codigoLibro;
-        boolean prestado = false;
+        int codigoLibro, menu = 0;
+        boolean prestado = true;
 
         System.out.println("\n");
+        System.out.println("Ingreso del libros");
 
         System.out.print("\nIngrese el nombre del libro: ");
         nombreLibro = scanner.nextLine();
 
         System.out.print("\nIngrese el autor del libro: ");
-        ancho = scanner.nextLine();
+        autor = scanner.nextLine();
 
         System.out.print("\nIngrese el codigo  el libro: ");
-        ancho = scanner.nextInt();
-
+        codigoLibro = scanner.nextInt();
 
         // Creando el objeto libro
-        Libro rectangulo = new Libro(nombreLibro, autor, codigoLibro, prestado);
-        
-    
+        Libro libro = new Libro(nombreLibro, autor, codigoLibro, prestado);
 
+        libro.mostrarDatos(libro.getNombreLibro(), libro.getAutor(), libro.getCodigoLibro(), libro.getPrestado());
+
+        while (menu != 3) {
+
+            System.out.println("\nOpciones Disponibles");
+            System.out.println("\n1. Devolver Libro");
+            System.out.println("\n2. Prestar Libro");
+            System.out.print("Opcion: ");
+            menu = scanner.nextInt();
+            System.out.println("\n---------------------------");
+
+            if (menu == 1) {
+
+                libro.devolucionLibro();
+                libro.mostrarDatos(libro.getNombreLibro(), libro.getAutor(), libro.getCodigoLibro(), libro.getPrestado());
+
+            }
+            if (menu == 2) {
+
+                libro.prestamoLibro();
+
+                libro.mostrarDatos(libro.getNombreLibro(), libro.getAutor(), libro.getCodigoLibro(), libro.getPrestado());
+
+            }
+
+            if (menu == 3) {
+
+                System.out.println("Vuelve pronto");
+
+            }
+        }
 
     }
 
-    private int nombreLibro, autor, codigoLibro, prestado;
-
-    
-
-    
+    //variables
+    private String nombreLibro, autor;
+    private int codigoLibro;
+    private boolean prestado;
 
     // constructor de la clase por defecto
     public Libro() {
 
     }
-
 
     //construcctor con parametros
     public Libro(String nombreLibro, String autor, int codigoLibro, boolean prestado) {
@@ -53,24 +80,17 @@ public class Libro {
 
     }
 
-
     // prestamo
     private void prestamoLibro() {
 
-        prestado = true;
+        setPrestado(false);
 
     }
 
     //calcular el perimetro 
     private void devolucionLibro() {
 
-        prestado = false;
-
-    }
-
-    public void mostrarDatos(String nombreLibro, String autor, int codigoLibro, boolean prestado){
-
-        System.out.println("El libro " + )
+        setPrestado(true);
 
     }
 
@@ -130,8 +150,10 @@ public class Libro {
 
     }
 
-       
+    private void mostrarDatos(String nombreL, String nombreA, int codigo, boolean prestamo) {
 
-   
+        System.out.println("\nNombre del Libro: " + nombreLibro + " Autor del libro: " + nombreA + " Codigo del libro: " + codigo + " Disponible: " + prestamo);
+
+    }
 
 }
