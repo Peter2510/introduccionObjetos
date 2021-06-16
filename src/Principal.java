@@ -85,6 +85,36 @@ public class Principal{
 		System.out.println("El perimetro del cuadrado es de: "  + circulo1.getPerimetro());
 		System.out.println("\nTermino la ejecucion del ejercicio Circulo");
 
+		System.out.println("-----------------------------------");
+		System.out.println("\nEjecutando el ejercicio Rectangulo \n");
+		//Objeto rectangulo1 creado, ancho
+		Rectangulo rectangulo1 = new Rectangulo(12,3);
+		//Objeto ciruculo2 creado, copia de rectangulo1
+		Rectangulo rectangulo2 = rectangulo1;
+		//calcular el area del rectangulo de 12 unidad de ancho y 3 de largo
+		rectangulo1.calcularArea();
+		//calcular el perimetro del rectangulo de 12 unidad de ancho y 3 de largo
+		rectangulo1.calcularPerimetro();
+		//mostrar el perimetro y el radio del rectangulo de 12 unidad de ancho y 3 de largo
+		System.out.println("ancho = 12 , largo = 3");
+		System.out.println("El area del rectangulo es de: " + rectangulo1.getArea());
+		System.out.println("El perimetro del rectangulo es de: " + rectangulo1.getPerimetro());
+		//Cambiar el ancho a 8 
+		rectangulo2.setAncho(8);
+		//cambiar el largo a 20
+		rectangulo2.setLargo(20);
+		//calcular el area del rectangulo de 8 unidad de ancho y 20 de largo
+		rectangulo1.calcularArea();
+		//calcular el perimetro del rectangulo de 8 unidad de ancho y 20 de largo
+		rectangulo1.calcularPerimetro();
+		//mostrar el perimetro y el radio del rectangulo de 12 unidad de ancho y 3 de largo
+		System.out.println("ancho = 8 , largo = 20");
+		System.out.println("El area del circulo es de: "  + circulo1.getArea());
+		System.out.println("El perimetro del cuadrado es de: "  + circulo1.getPerimetro());
+		System.out.println("El area del rectangulo es de: " + rectangulo1.getArea());
+		System.out.println("El perimetro del rectangulo es de: " + rectangulo1.getPerimetro());
+
+
 
 
 

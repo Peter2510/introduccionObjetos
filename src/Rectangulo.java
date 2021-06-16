@@ -53,14 +53,14 @@ public class Rectangulo {
     }
 
     // calcular el area 
-    private void calcularArea() {
+    public void calcularArea() {
 
         area = ancho * largo;
 
     }
 
     //calcular el perimetro 
-    private void calcularPerimetro() {
+    public void calcularPerimetro() {
 
         perimetro = 2 *(largo) *(ancho);
 
