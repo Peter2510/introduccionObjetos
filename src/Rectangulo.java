@@ -19,7 +19,7 @@ public class Rectangulo {
         largo = scanner.nextInt();
 
 
-        if (lado1==lado2) {
+        if (ancho==largo) {
 
             System.out.println("Ingresa los lados diferentes del rectangulo para continuar");
             
@@ -28,85 +28,98 @@ public class Rectangulo {
         else{
 
         // Creando el objeto rectangulo
-        Rectangulo rectangulo = new Rectangulo(lado1, lado2);
+        Rectangulo rectangulo = new Rectangulo(ancho, largo);
 
-        circulo.calcularArea();
-        circulo.calcularPerimetro();
-
-        System.out.println("\nEl area del cuadrado de lados de: " + circulo.getRadio() + " es de: " + circulo.getArea() + " unidades, y el perimetro es: " + circulo.getPerimetro());
 
 
         }
 
-       
-
     }
 
-    private Double radio, area, perimetro;
+    private int largo, ancho, perimetro, area;
 
     // constructor de la clase
 
     //construcctor con parametros
-    public Circulo(Double radio) {
+    public Rectangulo(int ancho, int largo) {
 
-        this.radio = radio;
-
-    }
-
-    // calcular el area con el lado ingresado
-    public void calcularArea() {
-
-        area = (3.1416) * radio * radio;
+        this.ancho = ancho;
+        this.largo = largo;
 
     }
 
-    //calcular el perimetro con el lado ingresado
-    public void calcularPerimetro() {
+    // calcular el area 
+    private void calcularArea() {
 
-        perimetro = 2 *(3.1416) *(radio);
-
-    }
-
-    //obtener el valor del lado ingresado
-    public Double getRadio() {
-
-        return radio;
+        area = ancho * largo;
 
     }
 
-    //cambiar el valor del lado ingresado
-    public void setRadio(Double radio) {
+    //calcular el perimetro 
+    private void calcularPerimetro() {
 
-        this.radio = radio;
+        perimetro = 2 *(largo) *(ancho);
+
+    }
+
+    //obtener el largo 
+    public int getLargo() {
+
+        return largo;
+
+    }
+
+    //cambiar el valor del largo ingresado
+    public void setLargo(int largo) {
+
+        this.largo = largo;
+
+    }
+
+    //obtener la altura 
+    public int getAltura() {
+
+        return altura;
+
+    }
+
+    //cambiar el valor de la altura ingresado
+    public void setAltura(int altura) {
+
+        this.altura = altura;
 
     }
 
     //obtener el area calculada
-    public Double getArea() {
+    public int getArea() {
 
         return area;
 
     }
 
     //cambiar el area hallada
-    public void setArea(Double area) {
+    public void setArea(int area) {
 
         this.area = area;
 
     }
 
-    //cambiar el perimetro
-    public Double getPerimetro() {
+    //obtener el perimetro
+    public int getPerimetro() {
 
         return perimetro;
 
     }
 
     //cambiar le perimetro hallado
-    public void setPerimetro(Double perimetro) {
+    public void setPerimetro(int perimetro) {
 
         this.perimetro = perimetro;
 
     }
+
+       
+
+   
 
 }
