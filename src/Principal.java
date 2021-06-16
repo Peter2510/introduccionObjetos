@@ -41,9 +41,10 @@ public class Principal{
 		Cuadrado cuadrado2 = cuadrado1;
 		//calcular el area del cuadrado con lado de 5 unidades
 		cuadrado1.calcularArea();
-		//calcular el area del pemimetro con lado de 5 unidades
+		//calcular el perimetro con lado de 5 unidades
 		cuadrado1.calcularPerimetro();
 		//mostrar el area y perimetro del cuadrado con lado de 5 unidades
+		System.out.println("lado = 5");
 		System.out.println("El area del cuadrado es de: " + cuadrado1.getArea());
 		System.out.println("El perimetro del cuadrado es de: " + cuadrado1.getPerimetro());
 		//Cambiar el lado del cuadrado a 2 unidades
@@ -53,9 +54,38 @@ public class Principal{
 		//Calcular el perimetro del cuadrado de 2 unidades
 		cuadrado1.calcularPerimetro();
 		//mostrar el area y perimetro del cuadrado con lado de 2 unidades
-		System.out.println("El area del cuadrado es de: "  + cuadrado2.getArea());
-		System.out.println("El perimetro del cuadrado es de: "  + cuadrado2.getPerimetro());
+		System.out.println("lado = 2");
+		System.out.println("El area del cuadrado es de: "  + cuadrado1.getArea());
+		System.out.println("El perimetro del cuadrado es de: "  + cuadrado1.getPerimetro());
 		System.out.println("\nTermino la ejecucion del ejercicio Cuadrado");
+
+		System.out.println("-----------------------------------");
+		System.out.println("\nEjecutando el ejercicio Circulo \n");
+		//Objeto circulo1 creado, radio de 1 unidadd
+		Circulo circulo1 = new Circulo(2.5);
+		//Objeto ciruculo2 creado, copia de circulo1
+		Circulo circulo2 = circulo1;
+		//calcular el area del circulo de 2.5 unidad de radio
+		circulo1.calcularArea();
+		//calcular el perimetro con radio de 2.5 unidad
+		circulo1.calcularPerimetro();
+		//mostrar el area y perimetro del circulo radio de 1 unidades
+		System.out.println("radio = 2.5");
+		System.out.println("El area del circulo es de: " + circulo1.getArea());
+		System.out.println("El perimetro del circulo es de: " + cuadrado1.getPerimetro());
+		//Cambiar el radio  del circulo a 5 unidades
+		circulo2.setRadio(5.0);
+		//Calcular el area del circulo de 5 unidades de radio
+		circulo1.calcularArea();
+		//Calcular el perimetro del circulo de 5 unidades de radio
+		circulo1.calcularPerimetro();
+		//mostrar el area y perimetro del circulo de 5 unidades de radio
+		System.out.println("radio = 5");
+		System.out.println("El area del circulo es de: "  + circulo1.getArea());
+		System.out.println("El perimetro del cuadrado es de: "  + circulo1.getPerimetro());
+		System.out.println("\nTermino la ejecucion del ejercicio Circulo");
+
+
 
 
 
