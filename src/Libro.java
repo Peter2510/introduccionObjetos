@@ -31,85 +31,102 @@ public class Libro {
 
     }
 
-    private int largo, ancho, perimetro, area;
+    private int nombreLibro, autor, codigoLibro, prestado;
 
-    // constructor de la clase
+    
 
-    //construcctor con parametros
-    public Rectangulo(int ancho, int largo) {
+    
 
-        this.ancho = ancho;
-        this.largo = largo;
+    // constructor de la clase por defecto
+    public Libro() {
 
     }
 
-    // calcular el area 
-    private void calcularArea() {
 
-        area = ancho * largo;
+    //construcctor con parametros
+    public Libro(String nombreLibro, String autor, int codigoLibro, boolean prestado) {
+
+        this.nombreLibro = nombreLibro;
+        this.autor = autor;
+        this.codigoLibro = codigoLibro;
+        this.prestado = prestado;
+
+    }
+
+
+    // prestamo
+    private void prestamoLibro() {
+
+        prestado = true;
 
     }
 
     //calcular el perimetro 
-    private void calcularPerimetro() {
+    private void devolucionLibro() {
 
-        perimetro = 2 *(largo) *(ancho);
-
-    }
-
-    //obtener el largo 
-    public int getLargo() {
-
-        return largo;
+        prestado = false;
 
     }
 
-    //cambiar el valor del largo ingresado
-    public void setLargo(int largo) {
+    public void mostrarDatos(String nombreLibro, String autor, int codigoLibro, boolean prestado){
 
-        this.largo = largo;
-
-    }
-
-    //obtener la altura 
-    public int getAncho() {
-
-        return ancho;
+        System.out.println("El libro " + )
 
     }
 
-    //cambiar el valor de la altura ingresado
-    public void setAncho(int ancho) {
+    //obtener el nombre del libro
+    public String getNombreLibro() {
 
-        this.ancho = ancho;
+        return nombreLibro;
 
     }
 
-    //obtener el area calculada
-    public int getArea() {
+    //cambiar el nombre del libro
+    public void setNombreLibro(String nombreLibro) {
 
-        return area;
+        this.nombreLibro = nombreLibro;
+
+    }
+
+    //obtener el autor del libro 
+    public String getAutor() {
+
+        return autor;
+
+    }
+
+    //cambiar el nombre del autor
+    public void setAutor(String autor) {
+
+        this.autor = autor;
+
+    }
+
+    //obtener el codigo del libro
+    public int getCodigoLibro() {
+
+        return codigoLibro;
 
     }
 
     //cambiar el area hallada
-    public void setArea(int area) {
+    public void setCodigoLibro(int codigoLibro) {
 
-        this.area = area;
+        this.codigoLibro = codigoLibro;
 
     }
 
     //obtener el perimetro
-    public int getPerimetro() {
+    public boolean getPrestado() {
 
-        return perimetro;
+        return prestado;
 
     }
 
     //cambiar le perimetro hallado
-    public void setPerimetro(int perimetro) {
+    public void setPrestado(boolean prestado) {
 
-        this.perimetro = perimetro;
+        this.prestado = prestado;
 
     }
 
