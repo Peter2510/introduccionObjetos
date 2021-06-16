@@ -136,13 +136,40 @@ public class Principal{
 		System.out.println("Nombre del autor: " + libro1.getAutor());
 		System.out.println("Codigo del libro: " + libro1.getCodigoLibro());
 		System.out.println("Disponible: " + libro1.getPrestado());
-
-
-
-
 		System.out.println("\nTermino la ejecucion del ejercicio Rectangulo");
 
 
+		System.out.println("-----------------------------------");
+		System.out.println("\nEjecutando el ejercicio Fraccion \n");
+		//Objeto fraccion creado
+		Fraccion fraccion1 = new Fraccion(3.0, 4.0, 2.0, 5.0);
+		//Objeto fraccion2 creado
+		Fraccion fraccion2 = fraccion1;
+		//Datos iniciales de los calculos
+		fraccion1.suma();
+        fraccion1.resta();
+        fraccion1.multiplicacion();
+        fraccion1.division();
+		System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") + ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getSuma() + "\n");
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") -("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getResta() + "\n");
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") * ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getMultiplicacion() + "\n");
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") - ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getDivision() + "\n");
+		//Cambiando datos
+		fraccion2.setNumero1(8.0);
+		fraccion2.setNumero2(13.0);
+		fraccion2.setNumero3(27.0);
+		fraccion2.setNumero4(2.0);
+		//Imprimiendo nuevos valores
+		fraccion1.suma();
+        fraccion1.resta();
+        fraccion1.multiplicacion();
+        fraccion1.division();
+        System.out.println("\n Cambio de valores");
+		System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") + ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getSuma() + "\n");
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") -("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getResta() + "\n");
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") * ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getMultiplicacion() + "\n");
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") - ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getDivision() + "\n");
+		
 
 
 

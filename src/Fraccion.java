@@ -61,25 +61,25 @@ public class Fraccion {
     }
 
     // prestamo
-    private void suma() {
+    public void suma() {
 
         suma =  ((numero1 * numero4) + (numero3 * numero2))/(numero2*numero4);
 
     }
 
     //calcular el perimetro 
-    private void resta() {
+    public void resta() {
 
         resta = numero1 - numero2;
 
     }
 
-    private void multiplicacion(){
+    public void multiplicacion(){
 
         multiplicacion = numero1 * numero2;
     }
 
-    private void division(){
+    public void division(){
         
         division = numero1 / numero2;
     }
