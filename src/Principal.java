@@ -111,6 +111,38 @@ public class Principal{
 		System.out.println("ancho = 8 , largo = 20");
 		System.out.println("El area del rectangulo es de: " + rectangulo1.getArea());
 		System.out.println("El perimetro del rectangulo es de: " + rectangulo1.getPerimetro());
+		System.out.println("\nTermino la ejecucion del ejercicio Rectangulo");
+
+
+		System.out.println("-----------------------------------");
+		System.out.println("\nEjecutando el ejercicio Libro \n");
+		//Objeto libro creado
+		Libro libro1 = new Libro("Historia de un pepe", "Autor 1", 5418, true);
+		//Objeto libro2 creado
+		Libro libro2 = libro1;
+		//Datos iniciales del libro
+		System.out.println("Nombre del libro: " + libro1.getNombreLibro());
+		System.out.println("Nombre del autor: " + libro1.getAutor());
+		System.out.println("Codigo del libro: " + libro1.getCodigoLibro());
+		System.out.println("Disponible: " + libro1.getPrestado());
+		//Cambiando datos
+		System.out.println("\n*** Cambiando datos ***\n");
+		libro2.setNombreLibro("El año en que Lucia dejo de soñar");
+		libro2.setAutor("Autor desconocido");
+		libro2.setCodigoLibro(45);
+		libro2.setPrestado(false);
+		//Imprimiendo nuevos valores
+		System.out.println("Nombre del libro: " + libro1.getNombreLibro());
+		System.out.println("Nombre del autor: " + libro1.getAutor());
+		System.out.println("Codigo del libro: " + libro1.getCodigoLibro());
+		System.out.println("Disponible: " + libro1.getPrestado());
+
+
+
+
+		System.out.println("\nTermino la ejecucion del ejercicio Rectangulo");
+
+
 
 
 
