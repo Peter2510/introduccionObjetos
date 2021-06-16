@@ -7,92 +7,88 @@ public class Cuadrado {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
-        // Creando el objeto cuadrado
-        Cuadrado cuadrado = new Cuadrado (int lado);
+        int lado;
 
         System.out.println("\n");
 
-         System.out.print("\nIngrese un lado del cuadrado");
+        System.out.print("\nIngrese un lado del cuadrado: ");
+        lado = scanner.nextInt();
 
-        
+        // Creando el objeto cuadrado
+        Cuadrado cuadrado = new Cuadrado(lado);
+
+        cuadrado.calcularArea();
+        cuadrado.calcularPerimetro();
+
+        System.out.println("\nEl area del cuadrado de lados de: " + cuadrado.getLados() + " es de: " + cuadrado.getArea() + " unidades, y el perimetro es: " + cuadrado.getPerimetro());
 
     }
 
     private int lado, area, perimetro;
-    
 
     // constructor de la clase
 
     //construcctor con parametros
     public Cuadrado(int lado) {
 
-        this.contadorVariable = contador;
+        this.lado = lado;
 
     }
 
-
+    // calcular el area con el lado ingresado
     public void calcularArea() {
 
-        area = lado*lado;
-    
+        area = lado * lado;
 
     }
 
-     public void calcularPerimetro() {
+    //calcular el perimetro con el lado ingresado
+    public void calcularPerimetro() {
 
-        area = 4*(lado);
-    
-
-    }
-
-     public int getLados() {
-
-        return area;
+        perimetro = 4 * (lado);
 
     }
 
+    //obtener el valor del lado ingresado
+    public int getLados() {
+
+        return lado;
+
+    }
+
+    //cambiar el valor del lado ingresado
     public void setLados(int lado) {
 
         this.lado = lado;
 
     }
 
-   
-
+    //obtener el area calculada
     public int getArea() {
 
         return area;
 
     }
 
+    //cambiar el area hallada
     public void setArea(int area) {
 
         this.area = area;
 
     }
 
-     public int getPerimetro() {
+    //cambiar el perimetro
+    public int getPerimetro() {
 
-        return area;
+        return perimetro;
 
     }
 
+    //cambiar le perimetro hallado
     public void setPerimetro(int perimetro) {
 
         this.perimetro = perimetro;
 
     }
 
-    public void mostrarDatos() {
-
-        
-
-        System.out.println("----------------------------------------------");
-
-        System.out.println("\nEl area del cuadrado de lados de " + lados + " es de: " + getArea() + " unidades, y el perimetro es: " getPerimetro());
-
-    }
-
-   
 }
