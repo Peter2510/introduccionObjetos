@@ -164,7 +164,7 @@ public class Principal{
         fraccion1.resta();
         fraccion1.multiplicacion();
         fraccion1.division();
-        System.out.println("\n Cambio de valores");
+        System.out.println("\n Cambio de valores de los numeros");
 		System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") + ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getSuma() + "\n");
         System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") -("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getResta() + "\n");
         System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") * ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getMultiplicacion() + "\n");
