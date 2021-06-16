@@ -150,26 +150,27 @@ public class Principal{
         fraccion1.resta();
         fraccion1.multiplicacion();
         fraccion1.division();
+        //Impresion de valores con los calculos inciales
 		System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") + ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getSuma() + "\n");
-        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") -("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getResta() + "\n");
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") - ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getResta() + "\n");
         System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") * ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getMultiplicacion() + "\n");
-        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") - ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getDivision() + "\n");
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") / ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getDivision() + "\n");
 		//Cambiando datos
 		fraccion2.setNumero1(8.0);
 		fraccion2.setNumero2(13.0);
 		fraccion2.setNumero3(27.0);
 		fraccion2.setNumero4(2.0);
-		//Imprimiendo nuevos valores
+        //Impresion de valores con los datos cambiados
 		fraccion1.suma();
         fraccion1.resta();
         fraccion1.multiplicacion();
         fraccion1.division();
         System.out.println("\n Cambio de valores de los numeros");
 		System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") + ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getSuma() + "\n");
-        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") -("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getResta() + "\n");
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") - ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getResta() + "\n");
         System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") * ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getMultiplicacion() + "\n");
-        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") - ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getDivision() + "\n");
-		
+        System.out.print("\n (" + fraccion1.getNumero1() + " / " + fraccion1.getNumero2() + ") / ("+ fraccion1.getNumero3() + " / " + fraccion1.getNumero4()+ ") : " + fraccion1.getDivision() + "\n");
+		System.out.println("\nTermino la ejecucion del ejercicio  Fraccion");
 
 
 
