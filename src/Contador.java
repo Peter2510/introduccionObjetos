@@ -7,6 +7,7 @@ public class Contador {
     public static void main(String[] args) {
 
         Contador contador = new Contador();
+        Contador contador1 = new Contador(contador);
 
         int opcion = 0;
         Scanner scanner = new Scanner(System.in);
@@ -49,6 +50,12 @@ public class Contador {
 
     // construcor vacio
     public Contador() {
+
+    }
+
+    public Contador(Contador contador) {
+
+        this.contadorVariable = contadorVariable;
 
     }
 
