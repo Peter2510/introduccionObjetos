@@ -21,7 +21,7 @@ public class Rectangulo {
 
         if (ancho==largo) {
 
-            System.out.println("Ingresa los lados diferentes del rectangulo para continuar");
+            System.out.println("\nIngresa los lados diferentes del rectangulo para continuar");
             
         } 
         
@@ -29,6 +29,10 @@ public class Rectangulo {
 
         // Creando el objeto rectangulo
         Rectangulo rectangulo = new Rectangulo(ancho, largo);
+        rectangulo.calcularPerimetro();
+        rectangulo.calcularArea();
+
+        System.out.println("\nEl area del rectangulo con largo de " + rectangulo.getLargo() +" unidades y " + rectangulo.getAncho() + " unidades de ancho es de: "+  rectangulo.getArea() + " unidades cuadradas y el perimetro es de " + rectangulo.getPerimetro() + " unidades ");
 
 
 
@@ -77,16 +81,16 @@ public class Rectangulo {
     }
 
     //obtener la altura 
-    public int getAltura() {
+    public int getAncho() {
 
-        return altura;
+        return ancho;
 
     }
 
     //cambiar el valor de la altura ingresado
-    public void setAltura(int altura) {
+    public void setAncho(int ancho) {
 
-        this.altura = altura;
+        this.ancho = ancho;
 
     }
 
