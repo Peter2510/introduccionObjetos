@@ -11,7 +11,7 @@ public class Circulo {
 
         System.out.println("\n");
 
-        System.out.print("\nIngrese un lado del cuadrado: ");
+        System.out.print("\nIngrese el radio del circulo: ");
         radio = scanner.nextDouble();
 
         // Creando el objeto cuadrado
@@ -20,7 +20,7 @@ public class Circulo {
         circulo.calcularArea();
         circulo.calcularPerimetro();
 
-        System.out.println("\nEl area del cuadrado de lados de: " + circulo.getRadio() + " es de: " + circulo.getArea() + " unidades, y el perimetro es: " + circulo.getPerimetro());
+        System.out.println("\nEl area del circulo de radio " + circulo.getRadio() + " es de: " + circulo.getArea() + " unidades, y el perimetro es: " + circulo.getPerimetro());
 
     }
 
