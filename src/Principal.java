@@ -109,8 +109,6 @@ public class Principal{
 		rectangulo1.calcularPerimetro();
 		//mostrar el perimetro y el radio del rectangulo de 12 unidad de ancho y 3 de largo
 		System.out.println("ancho = 8 , largo = 20");
-		System.out.println("El area del circulo es de: "  + circulo1.getArea());
-		System.out.println("El perimetro del cuadrado es de: "  + circulo1.getPerimetro());
 		System.out.println("El area del rectangulo es de: " + rectangulo1.getArea());
 		System.out.println("El perimetro del rectangulo es de: " + rectangulo1.getPerimetro());
 
